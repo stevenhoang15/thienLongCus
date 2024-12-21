@@ -6,7 +6,7 @@
     </div> -->
     <h1 class="text-3xl font-bold mb-4 text-center pt-10 pb-10 font-hinamincho text-yellow-500 ">Chuyển đến tài khoản ngân hàng để Nạp Thẻ</h1>
     <div class="flex justify-center items-center h-screen pt-10">
-        <img src="../assets/img/napthe.jpg" class="flex justify-center items-center h-screen" alt="Nap The">
+        <img src="../assets/img/napThe.jpg" class="flex justify-center items-center h-screen" alt="Nap The">
     </div>
       <!-- <div class="flex flex-col space-y-4">
         <div class="flex space-x-4">
