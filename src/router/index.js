@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignInView from '@/views/SignInView.vue'
+import EventViewVue from '@/views/EventView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
       component: SignInView,
     },
     {
+      path: '/events',
+      name: 'events',
+      component: EventViewVue,
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../components/Login.vue'),
@@ -24,6 +30,11 @@ const router = createRouter({
       path: '/napthe',
       name: 'napthe',
       component: () => import('../components/NapThe.vue'),
+    },
+    {
+      path: '/thongtinnapthe',
+      name: 'thongtinnapthe',
+      component: () => import('../views/NapTheInfo.vue'),
     },
     {
       path: '/admin',

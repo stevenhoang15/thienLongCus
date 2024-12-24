@@ -4,7 +4,7 @@
       <a href="/" @click.prevent="$router.push('/')" class="text-yellow-500 font-bold text-xl">Siêu phẩm 2025: Thiên Long SRO</a>
       <ul class="flex space-x-4">
         <li>
-          <a href="#" class="text-yellow-500 hover:text-white">SỰ KIỆN</a>
+          <a href="#" @click="navigateEvents" class="text-yellow-500 hover:text-white">SỰ KIỆN</a>
         </li>
 
         <li>
@@ -21,7 +21,7 @@
         </li>
 
         <li>
-          <a href="#" @click="navigateNapThe" class="text-yellow-500 hover:text-white">NẠP THẺ</a>
+          <a href="#" @click="navigateThongTinNapThe" class="text-yellow-500 hover:text-white">NẠP THẺ</a>
         </li>
 
       </ul>
@@ -40,11 +40,14 @@
     navigateToLogin() {
       this.$router.push("/login");
     },
-    navigateNapThe() {
-      this.$router.push("/napthe");
+    navigateThongTinNapThe() {
+      this.$router.push("/thongtinnapthe");
     },
     navigateAdmin() {
       this.$router.push("/admin");
+    },
+    navigateEvents() {
+      this.$router.push("/events");
     }
   }
   };
